@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+header{
+    background-color: #2F2BA6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
+
+header > span{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Press Start 2P", system-ui;
+
+}
+
+nav{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-top: 2px solid red ;
+    border-bottom: 2px solid rgb(181, 181, 181);
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    /* height: 100%; */
+    
+}
+
+ul > li{
+
+    text-align: center;
+    display: flex;
+    /* align-self: center; */
+    /* align-items: center; */
+    height: 100%;
+    /* align-self: center; */
+    /* align-content: center; */
+
+    
+    
+}
+ul > li > a{
+    color: gray;
+    font-weight: bold;
+    font-size: 15px;
+    height: 100%;
+}
+ul > li > a:hover{
+    color: #2F2BA6;
+    transition: .5s ease-in-out;
+
+}
+
+button{
+    background-color: #FFDB4D;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #2B384E;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button:hover{
+    transform: scale(1.02);
+    transition: .5s ease-in-out;
+}
+button > img{
+    max-height: 25px;
+    margin-right: 10px
+    
+}
+
+@media all and (max-width: 821px) {
+    /* phone resolution */
+    header > a > button{
+        display: none;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+    }
+
+  }
